@@ -96,3 +96,19 @@ print(f"Standard Text {standard_text}")
 print(f"Encoded Text {encoded_text}")
 decoded_text = encoded_text.decode("utf-8")
 print(f"Decoded Text {decoded_text}") 
+
+
+# Tuples 
+holistic_weather = ("Rainy", "Sunny", "Windy")
+(weather1, weather2, weather3) = holistic_weather # Detstructuring tuples
+print(f"Its gonna be {weather1} in the morning leading with few hours of {weather2} weather and then it will be {weather3} the rest of the day.")
+
+# The destructure of tuples can be similarly used in variable assignments
+beatdown_ratio, winning_ratio = 2,1
+print(f"Printed ratio {beatdown_ratio} , {winning_ratio}")
+winning_ratio, beatdown_ratio = beatdown_ratio, winning_ratio
+print(f"Flipped up ratio {beatdown_ratio}, {winning_ratio}")
+
+# Membership
+print(f"Is Rainy in weather option ? {'Rainy' in holistic_weather}" )
+print(f"Is Rainy in weather option ? {'Downpour' in holistic_weather}" )
