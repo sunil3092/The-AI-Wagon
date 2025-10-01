@@ -79,3 +79,20 @@ print(f"Current temp : {current_temp}")
 print(f"Ideal temp : {ideal_temp - current_temp}")
 print(f"Ideal temp : {sys.float_info}")
 
+# Strings
+shoe_type = "Trainers"
+color = "Blue"
+print(f"We need {color} {shoe_type}")
+
+foxc = "Quick Brown Fox"
+print(f"The first word is : {foxc[0:5]}")
+print(f"The first word is : {foxc[:5]}")
+print(f"The first word is : {foxc[6:11]}")
+print(f"The first word is : {foxc[::-1]}") # Reversing a string
+
+standard_text = "á"
+encoded_text = standard_text.encode("utf-8")
+print(f"Standard Text {standard_text}")
+print(f"Encoded Text {encoded_text}")
+decoded_text = encoded_text.decode("utf-8")
+print(f"Decoded Text {decoded_text}") 
