@@ -112,3 +112,51 @@ print(f"Flipped up ratio {beatdown_ratio}, {winning_ratio}")
 # Membership
 print(f"Is Rainy in weather option ? {'Rainy' in holistic_weather}" )
 print(f"Is Rainy in weather option ? {'Downpour' in holistic_weather}" )
+
+# List
+ingredients = ["Water", "Milk", "Tea Leaves"]
+ingredients.append("Sugar")
+print(f"Ingredients are: {ingredients}")
+ingredients.remove("Water")
+print(f"Reving Ingredients: {ingredients}")
+spices = ["Ginger", "Cardimom"]
+ingredients.extend(spices)
+print(f"Extended Ingedients : {ingredients}")
+ingredients.insert(2, "Cloves")
+print(f"insert on a location : {ingredients}")
+last_item = ingredients.pop()
+print(f"Poped item : {last_item}")
+print(f"Popped list : {ingredients}")
+ingredients.reverse()
+print(f"Reveresed list : {ingredients}")
+ingredients.sort()
+print(f"Sorted List {ingredients}")
+
+sugar_levels = [1,2,3,4,5]
+print(f"Maximum of sugarlevel : {max(sugar_levels)}")
+print(f"Maximum of sugarlevel : {min(sugar_levels)}")
+
+# Operator Overloading
+base_liquid = ["water" , "alcohol"]
+extra_flavour = ["Mohito Mix"]
+print(f"The combination is {base_liquid + extra_flavour}")
+print(f"Make for 3 {(base_liquid + extra_flavour) * 3}")
+
+# Bytearray
+say_my_name = bytearray(b"Hisenberg")
+print(f"Byte Array Output : {say_my_name}")
+
+# Set
+essentail_kits = {"Raspberry Pi", "AI Hat"}
+essentail_Accessories = {"Case", "SSD Hat", "AI Hat"}
+
+all_kits = essentail_kits | essentail_Accessories # Union operation
+print(f"All kits by performing Union Operation {all_kits}") # Prints unique values
+
+common_kits = essentail_kits & essentail_Accessories # Intersection operation
+print(f"Common kits by performing Intersection  Operation {common_kits}") # Prints unique values
+
+
+only_in_all_kits  = essentail_kits - essentail_Accessories # Intersection operation
+print(f"Only in essential kits {only_in_all_kits}") # Prints unique values
+
