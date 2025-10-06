@@ -160,3 +160,31 @@ print(f"Common kits by performing Intersection  Operation {common_kits}") # Prin
 only_in_all_kits  = essentail_kits - essentail_Accessories # Intersection operation
 print(f"Only in essential kits {only_in_all_kits}") # Prints unique values
 
+print(f"Is 'Case' in  essentail_Accessories: {'Case' in essentail_Accessories}")
+
+# Dictonary
+
+parts_order = dict(type="Memory", size="128GB", slot="DDR5" )
+print(f"Parts dict : {parts_order}")
+
+parts_list = {}
+parts_list["cooler"] = "Air Coller"
+parts_list["CPU"] = "Intel"
+print(f"Printing Part of dict {parts_list["CPU"]}")
+del parts_list["cooler"] # Deleting values from the dict
+print(f"Printing new  dict {parts_list}")
+print(f"Is 'CPU' in the dict {'CPU' in  parts_list}")
+
+print(f"Keys of the dict {parts_order.keys()}")
+print(f"values of the dict {parts_order.values()}")
+print(f"items of the dict {parts_order.items()}")
+
+last_item = parts_order.popitem()
+print(f"Last item {last_item}")
+
+extra_parts = {"PSU" : "500W"}
+parts_list.update(extra_parts) 
+print(f"Updated Dict {parts_list}")
+
+non_avail_part_fetch = parts_list.get("cooler", "No Cooler in list")
+print(f"Safe Operation Dict {non_avail_part_fetch}")
